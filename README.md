@@ -34,7 +34,7 @@ Before you begin, ensure you have the following software installed on your machi
 In the project directory, you can run the following scripts:
 
 - npm start: Runs the app in development mode.
-- npm build: Builds the app for production using Webpack.
+- npm build: Builds the app for production using Webpack. (not available yet)
 
 ## Contributing
 

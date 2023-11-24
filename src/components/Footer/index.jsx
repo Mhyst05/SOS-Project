@@ -3,14 +3,20 @@ import React from "react";
 import { Button, Img, Text } from "components";
 
 const Footer = (props) => {
+  function handleNavigate() {
+    const win = window.open("instagram.com", "_blank");
+    win.focus();
+  }
+
   return (
     <>
       <footer className={props.className}>
         <div className="flex flex-col items-center justify-center mb-[71px] ml-[410px] mr-[416px] mt-[74px] w-[43%]">
           <div className="flex flex-col gap-10 items-center justify-center w-full">
-            <div className="flex sm:flex-col flex-row gap-[50px] items-center justify-start w-[82%] md:w-full">
+            <div className="flex sm:flex-col flex-row gap-[50px] items-center justify-center w-[82%] md:w-full">
               <Button
-                className="flex h-[60px] items-center justify-center w-[60px]"
+                className="common-pointer flex h-[60px] items-center justify-center w-[60px]"
+                onClick={handleNavigate}
                 shape="circle"
                 color="blue_gray_100"
                 size="xs"

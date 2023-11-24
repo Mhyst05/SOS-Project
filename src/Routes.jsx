@@ -16,6 +16,7 @@ const DetailHewandilindungi = React.lazy(
   () => import("pages/DetailHewandilindungi"),
 );
 const DetailDonationTwo = React.lazy(() => import("pages/DetailDonationTwo"));
+const FormLaporanSuccess = React.lazy(() => import("pages/FormLaporanSuccess"));
 const Articlelist = React.lazy(() => import("pages/Articlelist"));
 const LoginPage = React.lazy(() => import("pages/LoginPage"));
 const Laporan = React.lazy(() => import("pages/Laporan"));
@@ -33,9 +34,10 @@ const ProjectRoutes = () => {
     <React.Suspense fallback={<>Loading...</>}>
       <Router>
         <Routes>
-          <Route path="/" element={<Landingpage />} />
+          <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/navbar" element={<Navbar />} />
+          <Route path="/landingpage" element={<Landingpage />} />
           <Route path="/volunteer" element={<Volunteer />} />
           <Route path="/article" element={<Article />} />
           <Route path="/donation" element={<Donation />} />
@@ -47,6 +49,7 @@ const ProjectRoutes = () => {
           <Route path="/laporan" element={<Laporan />} />
           <Route path="/loginpage" element={<LoginPage />} />
           <Route path="/articlelist" element={<Articlelist />} />
+          <Route path="/formlaporansuccess" element={<FormLaporanSuccess />} />
           <Route path="/detaildonationtwo" element={<DetailDonationTwo />} />
           <Route
             path="/detailhewandilindungi"
@@ -64,7 +67,6 @@ const ProjectRoutes = () => {
             element={<FormVolunteerSuccess />}
           />
           <Route path="/formvolunteer" element={<FormVolunteer />} />
-          <Route path="/dhiwise-dashboard" element={<Home />} />
         </Routes>
       </Router>
     </React.Suspense>

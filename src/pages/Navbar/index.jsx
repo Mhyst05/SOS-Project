@@ -15,13 +15,13 @@ const NavbarPage = () => {
             className="common-pointer h-[60px] w-[60px]"
             src="images/img_frame382.svg"
             alt="frame382"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/landingpage")}
           />
           <div className="flex flex-1 sm:flex-col flex-row md:gap-10 gap-[66px] items-center justify-center w-full">
             <Text
               className="common-pointer text-2xl md:text-[22px] text-orange-50 sm:text-xl w-auto"
               size="txtUbuntuRegular24"
-              onClick={() => navigate("/listhewandilindungi")}
+              onClick={() => navigate("")}
             >
               LINDUNGI
             </Text>
@@ -44,7 +44,7 @@ const NavbarPage = () => {
               size="txtUbuntuRegular24"
               onClick={() => navigate("/volunteer")}
             >
-              Volunteer
+              VOLUNTEER
             </Text>
           </div>
           <Img

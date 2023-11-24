@@ -1,14 +1,18 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { Button, Img, Input, Line, Text } from "components";
-import Header from "components/Header";
+import Header1 from "components/Header1";
 
 const LoginPagePage = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="bg-gray-900 flex flex-col font-ubuntu items-center justify-start mx-auto p-5 w-full">
         <div className="flex flex-col md:gap-10 gap-[180px] items-end justify-start max-w-7xl mb-[237px] mx-auto md:px-5 w-full">
-          <Header className="flex flex-row items-center justify-center w-full" />
+          <Header1 className="flex flex-row items-center justify-center w-full" />
           <div className="flex md:flex-col flex-row md:gap-10 gap-20 items-center justify-end w-[94%] md:w-full">
             <div className="md:h-[401px] h-[540px] py-[59px] relative w-[540px] sm:w-full">
               <div className="h-[401px] m-auto w-full">
@@ -40,26 +44,26 @@ const LoginPagePage = () => {
                                       <Img
                                         className="h-[15px]"
                                         src="images/img_location_light_green_800.svg"
-                                        alt="location"
+                                        alt="vector"
                                       />
                                       <div className="md:h-[85px] h-[89px] ml-0.5 md:ml-[0] relative w-[73%]">
                                         <Line className="absolute bg-blue_gray-900 bottom-[0] h-[85px] left-[0] w-[3px]" />
                                         <Img
                                           className="absolute h-[15px] inset-x-[0] mx-auto top-[0]"
                                           src="images/img_location_light_green_800.svg"
-                                          alt="location_One"
+                                          alt="vector_Two"
                                         />
                                       </div>
                                     </div>
                                     <Img
                                       className="absolute h-2 left-[0] top-[14%]"
                                       src="images/img_eye.svg"
-                                      alt="eye"
+                                      alt="vector_Three"
                                     />
                                     <Img
                                       className="absolute h-2 right-[0] top-[11%]"
                                       src="images/img_eye.svg"
-                                      alt="eye_One"
+                                      alt="vector_Four"
                                     />
                                   </div>
                                   <div className="absolute flex flex-col h-[30px] inset-x-[0] items-start justify-start mx-auto top-[2%] w-[30px]">
@@ -67,24 +71,24 @@ const LoginPagePage = () => {
                                       <Img
                                         className="h-3 mt-0.5 w-[13px]"
                                         src="images/img_vector_light_green_800.svg"
-                                        alt="vector_One"
+                                        alt="vector_Five"
                                       />
                                       <Img
                                         className="h-[13px] w-3"
                                         src="images/img_vector_light_green_800.svg"
-                                        alt="vector_Two"
+                                        alt="vector_Six"
                                       />
                                     </div>
                                     <div className="flex flex-row items-start justify-evenly ml-0.5 md:ml-[0] mt-0.5 w-[94%] md:w-full">
                                       <Img
                                         className="h-[13px]"
                                         src="images/img_vector_light_green_800_13x11.svg"
-                                        alt="vector_Three"
+                                        alt="vector_Seven"
                                       />
                                       <Img
                                         className="h-3 w-[13px]"
                                         src="images/img_vector_light_green_800.svg"
-                                        alt="vector_Four"
+                                        alt="vector_Eight"
                                       />
                                     </div>
                                   </div>
@@ -92,13 +96,13 @@ const LoginPagePage = () => {
                                     className="absolute bg-cover bg-no-repeat flex flex-col h-9 inset-x-[0] items-center justify-start mx-auto p-3 top-[0] w-9"
                                     style={{
                                       backgroundImage:
-                                        "url('images/img_group65.svg')",
+                                        "url('images/img_group1739.svg')",
                                     }}
                                   >
                                     <Img
                                       className="h-2.5 w-2.5"
                                       src="images/img_vector_light_green_800_10x10.svg"
-                                      alt="vector_Five"
+                                      alt="vector_Nine"
                                     />
                                   </div>
                                 </div>
@@ -112,7 +116,7 @@ const LoginPagePage = () => {
                                   <Img
                                     className="h-16"
                                     src="images/img_fire.svg"
-                                    alt="fire"
+                                    alt="group"
                                   />
                                 </div>
                               </div>
@@ -120,13 +124,13 @@ const LoginPagePage = () => {
                                 className="bg-cover bg-no-repeat flex flex-col h-[74px] items-center justify-start ml-[-19.21px] mt-[7px] w-[57%] z-[1]"
                                 style={{
                                   backgroundImage:
-                                    "url('images/img_group61.svg')",
+                                    "url('images/img_group1735.svg')",
                                 }}
                               >
                                 <Img
                                   className="h-[74px]"
                                   src="images/img_group.svg"
-                                  alt="group"
+                                  alt="group_One"
                                 />
                               </div>
                             </div>
@@ -134,15 +138,15 @@ const LoginPagePage = () => {
                               className="absolute bg-cover bg-no-repeat bottom-[4%] flex flex-col h-[70px] items-center justify-start p-1.5 right-1/4 w-[32%]"
                               style={{
                                 backgroundImage:
-                                  "url('images/img_group62.svg')",
+                                  "url('images/img_group1736.svg')",
                               }}
                             >
                               <div className="flex flex-row items-center justify-evenly mb-[29px] mt-[9px] w-[92%] md:w-full">
                                 <Line className="bg-blue_gray-900 h-[19px] w-[3px]" />
                                 <Img
                                   className="h-1"
-                                  src="images/img_vector_blue_gray_900_4x15.svg"
-                                  alt="vector_Seven"
+                                  src="images/img_vector_4x15.svg"
+                                  alt="vector_Eleven"
                                 />
                               </div>
                             </div>
@@ -150,25 +154,25 @@ const LoginPagePage = () => {
                           <Img
                             className="absolute h-px right-[21%] top-[36%]"
                             src="images/img_vector_blue_gray_900_1x12.svg"
-                            alt="vector_Eight"
+                            alt="vector_Twelve"
                           />
                         </div>
                         <Img
                           className="absolute h-[27px] right-[29%] top-[16%]"
                           src="images/img_checkmark_blue_gray_900.svg"
-                          alt="checkmark"
+                          alt="vector_Thirteen"
                         />
                         <div
                           className="absolute bg-cover bg-no-repeat bottom-[0] flex flex-col h-[88px] items-end justify-start left-[13%] p-[3px] w-[30%]"
                           style={{
-                            backgroundImage: "url('images/img_group60.svg')",
+                            backgroundImage: "url('images/img_group1734.svg')",
                           }}
                         >
                           <div className="flex flex-row gap-[5px] items-start justify-evenly mb-[41px] mt-[21px] w-[78%] md:w-full">
                             <Img
                               className="h-1"
                               src="images/img_vector_blue_gray_900_4x13.svg"
-                              alt="vector_Nine"
+                              alt="vector_Fourteen"
                             />
                             <Line className="bg-blue_gray-900 h-[17px] w-[3px]" />
                           </div>
@@ -177,24 +181,24 @@ const LoginPagePage = () => {
                       <Img
                         className="absolute h-[3px] left-[13%] top-[40%]"
                         src="images/img_vector_blue_gray_900_3x13.svg"
-                        alt="vector_Eleven"
+                        alt="vector_Sixteen"
                       />
                     </div>
                     <Img
                       className="h-6 ml-[25px] mt-[-NaNpx] z-[1]"
-                      src="images/img_location_blue_gray_900.svg"
-                      alt="location_Two"
+                      src="images/img_vector_blue_gray_900_4x15.svg"
+                      alt="vector_Seventeen"
                     />
                     <div
                       className="bg-cover bg-no-repeat flex flex-col h-[43px] items-center justify-start ml-[19px] mt-[-13.58px] w-1/2 z-[1]"
                       style={{
-                        backgroundImage: "url('images/img_group64.svg')",
+                        backgroundImage: "url('images/img_group1738.svg')",
                       }}
                     >
                       <Img
                         className="h-[43px]"
                         src="images/img_vector_white_a700.svg"
-                        alt="vector_Twelve"
+                        alt="vector_Eighteen"
                       />
                     </div>
                   </div>
@@ -208,7 +212,7 @@ const LoginPagePage = () => {
               <Img
                 className="absolute h-[54px] right-[30%] top-[17%]"
                 src="images/img_checkmark_light_green_800.svg"
-                alt="checkmark_One"
+                alt="freepikspeech"
               />
             </div>
             <div className="bg-gray-900_01 flex flex-col md:gap-10 gap-[70px] items-center justify-start p-10 sm:px-5 rounded-[5px] w-[49%] md:w-full">
@@ -226,7 +230,7 @@ const LoginPagePage = () => {
                   Email
                 </Text>
                 <Input
-                  name="groupFiftyEight"
+                  name="emailplaceholder"
                   placeholder="Isi email..."
                   className="font-bold p-0 placeholder:text-blue_gray-900_47 text-left text-xl tracking-[-0.20px] w-full"
                   wrapClassName="mt-2 w-full"
@@ -242,7 +246,7 @@ const LoginPagePage = () => {
                   Password
                 </Text>
                 <Input
-                  name="groupFiftySeven"
+                  name="passwordplaceholder"
                   placeholder="Isi password..."
                   className="font-bold p-0 placeholder:text-blue_gray-900_47 text-left text-xl tracking-[-0.20px] w-full"
                   wrapClassName="mt-[11px] w-full"
@@ -252,7 +256,8 @@ const LoginPagePage = () => {
                   size="xs"
                 ></Input>
                 <Button
-                  className="cursor-pointer md:ml-[0] ml-[134px] mt-[55px] text-center text-lg tracking-[-0.18px] w-48"
+                  className="common-pointer cursor-pointer md:ml-[0] ml-[134px] mt-[55px] text-center text-lg tracking-[-0.18px] w-48"
+                  onClick={() => navigate("/landingpage")}
                   shape="round"
                   color="light_green_800"
                   size="lg"

@@ -2,7 +2,7 @@ import React from "react";
 
 import { Button, Img, Text } from "components";
 import Footer from "components/Footer";
-import Header from "components/Header";
+import Header1 from "components/Header1";
 
 const ArticlePage = () => {
   return (
@@ -50,7 +50,7 @@ const ArticlePage = () => {
                 </div>
               </div>
             </div>
-            <Header className="absolute flex flex-row inset-x-[0] items-center justify-center mx-auto top-[3%] w-full" />
+            <Header1 className="absolute flex flex-row inset-x-[0] items-center justify-center mx-auto top-[3%] w-full" />
           </div>
         </div>
         <div className="flex flex-col gap-[27px] items-end mt-[74px] md:px-10 sm:px-5 px-[140px] w-full">
@@ -88,9 +88,7 @@ const ArticlePage = () => {
             posuere felis.
           </Text>
         </div>
-        <div className="flex flex-col items-center mt-[198px] w-full">
-          <Footer className="bg-gray-900_01 flex items-center justify-center md:px-5 w-full" />
-        </div>
+        <Footer className="flex flex-col items-center mt-[198px] w-full" />
       </div>
     </>
   );

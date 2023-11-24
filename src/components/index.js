@@ -8,3 +8,4 @@ export { Radio } from "./Radio";
 export { RadioGroup } from "./RadioGroup";
 export { SelectBox } from "./SelectBox";
 export { Text } from "./Text";
+export { TextArea } from "./TextArea";

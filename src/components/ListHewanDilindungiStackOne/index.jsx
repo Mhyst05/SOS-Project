@@ -19,7 +19,7 @@ const ListHewanDilindungiStackOne = (props) => {
                 className="mt-[3px] text-3xl sm:text-[26px] md:text-[28px] text-deep_orange-800 tracking-[-0.30px]"
                 size="txtUbuntuBold30Deeporange800"
               >
-                {props?.username}
+                {props?.loremipsum}
               </Text>
               <Img
                 className="h-8 w-8"
@@ -33,7 +33,7 @@ const ListHewanDilindungiStackOne = (props) => {
                   className="leading-[20.00px] text-[15px] text-orange-50 tracking-[-0.15px] w-full"
                   size="txtUbuntuRegular15"
                 >
-                  {props?.userstatustext}
+                  {props?.loremipsumdolorOne}
                 </Text>
               </div>
             </div>
@@ -42,7 +42,7 @@ const ListHewanDilindungiStackOne = (props) => {
             className="absolute right-[9%] text-[15px] text-white-A700 top-[22%] tracking-[-0.15px]"
             size="txtUbuntuRegular15WhiteA700"
           >
-            {props?.status}
+            {props?.userstatus}
           </Text>
         </div>
       </div>
@@ -51,10 +51,10 @@ const ListHewanDilindungiStackOne = (props) => {
 };
 
 ListHewanDilindungiStackOne.defaultProps = {
-  username: "Lorem ipsum",
-  userstatustext:
+  loremipsum: "Lorem ipsum",
+  loremipsumdolorOne:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed euismod dui",
-  status: "Status",
+  userstatus: "Status",
 };
 
 export default ListHewanDilindungiStackOne;

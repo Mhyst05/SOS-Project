@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Text } from "components";
 import DonationColumn from "components/DonationColumn";
-import Header from "components/Header";
+import Header1 from "components/Header1";
 
 const DonationPage = () => {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ const DonationPage = () => {
               alt="d18f4d2e2b5f"
             />
             <div className="absolute flex flex-col md:gap-10 gap-[243px] inset-x-[0] items-center justify-start mx-auto top-[5%] w-[89%]">
-              <Header className="flex flex-row items-center justify-center w-full" />
+              <Header1 className="flex flex-row items-center justify-center w-full" />
               <div className="backdrop-opacity-[0.5] bg-black-900_6d blur-[120.00px] flex flex-col items-end justify-start p-11 md:px-10 sm:px-5">
                 <Text
                   className="mb-[45px] mr-[34px] sm:text-4xl md:text-[38px] text-[40px] text-orange-50 tracking-[-0.40px]"
@@ -242,7 +242,14 @@ const DonationPage = () => {
             </div>
           </div>
         </div>
-        <DonationColumn className="bg-gray-900_01 flex flex-col items-center justify-end mt-[100px] p-[71px] md:px-10 sm:px-5 w-full" />
+        <DonationColumn
+          className="bg-gray-900_01 flex flex-col items-center justify-end mt-[100px] p-[71px] md:px-10 sm:px-5 w-full"
+          instagramlink="images/img_mdiinstagram.svg"
+          youtubelink="images/img_mdiyoutube.svg"
+          discordlink="images/img_icbaselinediscord.svg"
+          twitterlink="images/img_pajamastwitter.svg"
+          tiktoklink="images/img_icbaselinetiktok.svg"
+        />
       </div>
     </>
   );

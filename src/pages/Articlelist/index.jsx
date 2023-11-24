@@ -3,8 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Text } from "components";
-import Footer from "components/Footer";
-import Header from "components/Header";
+import Header1 from "components/Header1";
 
 const ArticlelistPage = () => {
   const navigate = useNavigate();
@@ -20,7 +19,7 @@ const ArticlelistPage = () => {
               alt="createabackgo"
             />
             <div className="absolute flex flex-col md:gap-10 gap-[177px] inset-x-[0] items-center justify-start mx-auto top-[3%] w-[89%]">
-              <Header className="flex flex-row items-center justify-center w-full" />
+              <Header1 className="flex flex-row items-center justify-center w-full" />
               <div className="backdrop-opacity-[0.5] bg-black-900_6d blur-[120.00px] flex flex-col gap-[19px] items-center justify-start p-7 sm:px-5">
                 <Text
                   className="sm:text-4xl md:text-[38px] text-[40px] text-white-A700 tracking-[-0.40px]"
@@ -313,7 +312,86 @@ const ArticlelistPage = () => {
             </div>
           </div>
         </div>
-        <Footer className="bg-gray-900_01 flex items-center justify-center mt-[149px] md:px-5 w-full" />
+        <footer className="bg-gray-900_01 flex items-center justify-center mt-[149px] md:px-5 w-full">
+          <div className="flex flex-col items-center justify-center mb-[71px] ml-[410px] mr-[416px] mt-[74px] w-[43%]">
+            <div className="flex flex-col gap-10 items-center justify-center w-full">
+              <div className="flex sm:flex-col flex-row gap-[50px] items-center justify-center w-[82%] md:w-full">
+                <Button
+                  className="flex h-[60px] items-center justify-center w-[60px]"
+                  shape="circle"
+                  color="blue_gray_100"
+                  size="xs"
+                  variant="fill"
+                >
+                  <Img
+                    className="h-11"
+                    src="images/img_mdiinstagram.svg"
+                    alt="mdiinstagram"
+                  />
+                </Button>
+                <Button
+                  className="flex h-[60px] items-center justify-center w-[60px]"
+                  shape="circle"
+                  color="blue_gray_100"
+                  size="xs"
+                  variant="fill"
+                >
+                  <Img
+                    className="h-[45px]"
+                    src="images/img_mdiyoutube.svg"
+                    alt="mdiyoutube"
+                  />
+                </Button>
+                <Button
+                  className="flex h-[60px] items-center justify-center w-[60px]"
+                  shape="circle"
+                  color="blue_gray_100"
+                  size="xs"
+                  variant="fill"
+                >
+                  <Img
+                    className="h-[45px]"
+                    src="images/img_icbaselinediscord.svg"
+                    alt="icbaselinedisco"
+                  />
+                </Button>
+                <Button
+                  className="flex h-[60px] items-center justify-center w-[60px]"
+                  shape="circle"
+                  color="blue_gray_100"
+                  size="xs"
+                  variant="fill"
+                >
+                  <Img
+                    className="h-11"
+                    src="images/img_pajamastwitter.svg"
+                    alt="pajamastwitter"
+                  />
+                </Button>
+                <Button
+                  className="flex h-[60px] items-center justify-center w-[60px]"
+                  shape="circle"
+                  color="blue_gray_100"
+                  size="xs"
+                  variant="fill"
+                >
+                  <Img
+                    className="h-[45px]"
+                    src="images/img_icbaselinetiktok.svg"
+                    alt="icbaselinetikto"
+                  />
+                </Button>
+              </div>
+              <Text
+                className="text-lg text-orange-50"
+                size="txtUbuntuRegular18"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </Text>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );

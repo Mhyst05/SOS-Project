@@ -2,9 +2,9 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { Button, Img, Input, SelectBox, Text } from "components";
+import { Button, Img, Input, SelectBox, Text, TextArea } from "components";
 import Footer1 from "components/Footer1";
-import Header from "components/Header";
+import Header1 from "components/Header1";
 
 const tinggiOptionsList = [
   { label: "Option1", value: "option1" },
@@ -26,7 +26,7 @@ const LaporanPage = () => {
               alt="aarmedhunter"
             />
             <div className="absolute flex flex-col md:gap-10 gap-[76px] inset-x-[0] items-center justify-start mx-auto top-[3%] w-[89%]">
-              <Header className="flex flex-row items-center justify-center w-full" />
+              <Header1 className="flex flex-row items-center justify-center w-full" />
               <div className="backdrop-opacity-[0.5] bg-black-900_6d blur-[120.00px] flex flex-col gap-[7px] items-center justify-start p-11 md:px-10 sm:px-5">
                 <Text
                   className="sm:text-4xl md:text-[38px] text-[40px] text-orange-50 tracking-[-0.40px]"
@@ -52,11 +52,12 @@ const LaporanPage = () => {
         </Text>
         <div className="flex flex-col items-center mt-[18px] md:px-10 sm:px-5 px-[311px] w-full">
           <Input
-            name="rectangle563"
-            placeholder=""
-            className="p-0 w-full"
-            wrapClassName="border border-blue_gray-900_01 border-solid flex h-[55px] w-full"
+            name="group1692"
+            placeholder="Isi disini...."
+            className="font-bold leading-[normal] p-0 placeholder:text-black-900_6d text-[15px] text-left w-full"
+            wrapClassName="border border-blue_gray-900_01 border-solid w-full"
             shape="round"
+            size="sm"
           ></Input>
         </div>
         <Text
@@ -76,7 +77,7 @@ const LaporanPage = () => {
             />
           }
           isMulti={false}
-          name="groupEight"
+          name="group1689"
           options={tinggiOptionsList}
           isSearchable={false}
           placeholder="Tinggi"
@@ -93,7 +94,7 @@ const LaporanPage = () => {
         </Text>
         <div className="flex flex-col items-center mt-[18px] md:px-10 sm:px-5 px-[311px] w-full">
           <Input
-            name="groupTen"
+            name="group1691"
             placeholder="Isi disini...."
             className="font-bold leading-[normal] p-0 placeholder:text-black-900_6d text-[15px] text-left w-full"
             wrapClassName="border border-blue_gray-900_01 border-solid w-full"
@@ -109,7 +110,7 @@ const LaporanPage = () => {
         </Text>
         <div className="flex flex-col items-center mt-[18px] md:px-10 sm:px-5 px-[311px] w-full">
           <Input
-            name="groupNine"
+            name="group1690"
             placeholder="Isi disini...."
             className="font-bold leading-[normal] p-0 placeholder:text-black-900_6d text-[15px] text-left w-full"
             wrapClassName="border border-blue_gray-900_01 border-solid w-full"
@@ -124,10 +125,15 @@ const LaporanPage = () => {
           Deskripsi kejadian
         </Text>
         <div className="flex flex-col items-center mt-[18px] w-full">
-          <div className="bg-white-A700 border border-blue_gray-900_01 border-solid h-[232px] md:px-5 rounded-[5px] w-[57%]"></div>
+          <TextArea
+            className="bg-white-A700 border border-blue_gray-900_01 border-solid font-bold leading-[normal] pb-[35px] pl-[25px] pr-[35px] pt-2 sm:px-5 rounded-[5px] text-[15px] placeholder:text-black-900_6d text-black-900_6d text-left w-[57%] sm:w-full"
+            name="group1688"
+            placeholder="Isi disini...."
+          ></TextArea>
           <Button
             className="common-pointer cursor-pointer min-w-[198px] mt-[98px] rounded-[29px] text-center text-xl tracking-[-0.20px]"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/formlaporansuccess")}
+            shape="circle"
             color="light_green_800"
             size="md"
             variant="fill"

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const shapes = { circle: "rounded-[50%]", round: "rounded-[7px]" };
+const shapes = { round: "rounded-[7px]", circle: "rounded-[50%]" };
 const variants = {
   fill: {
     white_A700: "bg-white-A700 text-black-900",
@@ -47,7 +47,7 @@ const Button = ({
 Button.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
-  shape: PropTypes.oneOf(["circle", "round"]),
+  shape: PropTypes.oneOf(["round", "circle"]),
   size: PropTypes.oneOf(["xs", "sm", "md", "lg", "xl"]),
   variant: PropTypes.oneOf(["fill"]),
   color: PropTypes.oneOf([

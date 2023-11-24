@@ -37,7 +37,8 @@ const LandingpagePage = () => {
                   sang raja hutan.
                 </Text>
                 <Button
-                  className="cursor-pointer font-medium min-w-[132px] text-base text-center tracking-[-0.16px]"
+                  className="common-pointer cursor-pointer font-medium min-w-[132px] text-base text-center tracking-[-0.16px]"
+                  onClick={() => navigate("/articlelist")}
                   shape="round"
                   color="light_green_800"
                   size="md"
@@ -67,9 +68,10 @@ const LandingpagePage = () => {
           <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start max-w-[1135px] mt-[53px] mx-auto md:px-5 w-full">
             <div className="h-[621px] relative w-[32%] md:w-full">
               <Img
-                className="absolute h-[621px] inset-[0] justify-center m-auto object-cover rounded-[20px] w-full"
+                className="common-pointer absolute h-[621px] inset-[0] justify-center m-auto object-cover rounded-[20px] w-full"
                 src="images/img_rectangle475.png"
                 alt="rectangle475"
+                onClick={() => navigate("/detailhewandilindungi")}
               />
               <div className="absolute backdrop-opacity-[0.5] bg-black-900_4c blur-[40.00px] bottom-[0] flex flex-col inset-x-[0] items-center justify-start mx-auto p-2.5 rounded-[20px] w-full">
                 <Text
@@ -86,9 +88,10 @@ const LandingpagePage = () => {
             </div>
             <div className="md:h-[621px] h-[625px] ml-9 md:ml-[0] relative w-[33%] md:w-full">
               <Img
-                className="absolute h-[621px] inset-[0] justify-center m-auto object-cover rounded-[20px] w-full"
+                className="common-pointer absolute h-[621px] inset-[0] justify-center m-auto object-cover rounded-[20px] w-full"
                 src="images/img_rectangle476.png"
                 alt="rectangle476"
+                onClick={() => navigate("/detailhewandilindungi")}
               />
               <div className="absolute backdrop-opacity-[0.5] bg-black-900_4c blur-[40.00px] bottom-[0] flex flex-col inset-x-[0] items-center justify-start mx-auto p-1.5 rounded-[20px] w-full">
                 <Text
@@ -105,9 +108,10 @@ const LandingpagePage = () => {
             </div>
             <div className="md:h-[621px] h-[625px] md:ml-[0] ml-[35px] relative w-[30%] md:w-full">
               <Img
-                className="absolute h-[621px] inset-[0] justify-center m-auto object-cover rounded-[20px] w-full"
+                className="common-pointer absolute h-[621px] inset-[0] justify-center m-auto object-cover rounded-[20px] w-full"
                 src="images/img_rectangle477.png"
                 alt="rectangle477"
+                onClick={() => navigate("/detailhewandilindungi")}
               />
               <div className="absolute backdrop-opacity-[0.5] bg-black-900_4c blur-[40.00px] bottom-[0] flex flex-col inset-x-[0] items-center justify-start mx-auto p-1.5 rounded-[20px] w-full">
                 <Text
@@ -125,14 +129,14 @@ const LandingpagePage = () => {
           </div>
           <div className="h-[1000px] md:h-[1108px] mt-[108px] md:px-5 relative w-full">
             <Img
-              className="h-[1000px] m-auto object-cover w-full"
+              className="border-none cursor-pointer h-[1000px] m-auto object-cover w-full"
               src="images/img_rectangle478.png"
               alt="rectangle478"
             />
             <div className="absolute bg-black-900 bottom-[0] h-[89px] right-[0] w-[7%]"></div>
             <div className="absolute backdrop-opacity-[0.5] bg-black-900_4c blur-[40.00px] flex flex-col gap-[43px] h-max inset-[0] items-center justify-center m-auto p-[13px] rounded-[20px]">
               <Text
-                className="md:text-3xl sm:text-[28px] text-[32px] text-orange-50"
+                className="block md:text-3xl sm:text-[28px] text-[32px] text-orange-50"
                 size="txtUbuntuBold32Orange50"
               >
                 Ikan Arwana Merah

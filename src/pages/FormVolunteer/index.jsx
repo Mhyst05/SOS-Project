@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Input, SelectBox, Text } from "components";
 import Footer1 from "components/Footer1";
-import Header from "components/Header";
+import Header1 from "components/Header1";
 
 const mahasiswaOptionsList = [
   { label: "Option1", value: "option1" },
@@ -36,7 +36,7 @@ const FormVolunteerPage = () => {
               alt="createimageof"
             />
             <div className="absolute flex flex-col gap-[58px] inset-x-[0] items-center justify-start mx-auto top-[6%] w-[89%]">
-              <Header className="flex flex-row items-center justify-center w-full" />
+              <Header1 className="flex flex-row items-center justify-center w-full" />
               <div className="backdrop-opacity-[0.5] bg-black-900_6d blur-[120.00px] flex flex-col items-center justify-start p-10 sm:px-5">
                 <Text
                   className="sm:text-4xl md:text-[38px] text-[40px] text-orange-50 tracking-[-0.40px]"
@@ -73,7 +73,7 @@ const FormVolunteerPage = () => {
             Email
           </Text>
           <Input
-            name="groupNinetyNine"
+            name="group1806"
             placeholder="Isi disini...."
             className="font-bold leading-[normal] p-0 placeholder:text-black-900_6d text-[15px] text-left w-full"
             wrapClassName="border border-blue_gray-900_01 border-solid mt-5 mx-auto w-[57%]"
@@ -87,14 +87,14 @@ const FormVolunteerPage = () => {
             No. Telp
           </Text>
           <Input
-            name="groupNinetyEight"
+            name="group1805"
             placeholder="Isi disini...."
             className="font-bold leading-[normal] p-0 placeholder:text-black-900_6d text-[15px] text-left w-full"
             wrapClassName="border border-blue_gray-900_01 border-solid mt-[18px] mx-auto w-[57%]"
             shape="round"
             size="sm"
           ></Input>
-          <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start md:ml-[0] ml-[311px] mt-[45px] md:px-5 w-[47%] md:w-full">
+          <div className="flex md:flex-col flex-row md:gap-5 items-center justify-center md:ml-[0] ml-[500px] mt-[45px] md:px-5 w-[47%] md:w-full">
             <Text
               className="text-white-A700 text-xl"
               size="txtUbuntuBold20WhiteA700"
@@ -114,7 +114,7 @@ const FormVolunteerPage = () => {
               Umur
             </Text>
           </div>
-          <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start md:ml-[0] ml-[311px] mt-[19px] md:px-5 w-[53%] md:w-full">
+          <div className="flex md:flex-col flex-row md:gap-5 items-center justify-center md:ml-[0] ml-[500px] mt-[19px] md:px-5 w-[53%] md:w-full">
             <SelectBox
               className="border border-blue_gray-900_01 border-solid font-bold leading-[normal] text-[15px] text-left w-[18%] md:w-full"
               placeholderClassName="text-black-900"
@@ -126,7 +126,7 @@ const FormVolunteerPage = () => {
                 />
               }
               isMulti={false}
-              name="groupNinetySix"
+              name="group1803"
               options={mahasiswaOptionsList}
               isSearchable={false}
               placeholder="Mahasiswa"
@@ -146,7 +146,7 @@ const FormVolunteerPage = () => {
                 />
               }
               isMulti={false}
-              name="groupNinetyFive"
+              name="group1802"
               options={priaOptionsList}
               isSearchable={false}
               placeholder="Pria"
@@ -166,7 +166,7 @@ const FormVolunteerPage = () => {
                 />
               }
               isMulti={false}
-              name="groupNinetyFour"
+              name="group1801"
               options={optionsList}
               isSearchable={false}
               placeholder="23"
@@ -179,6 +179,7 @@ const FormVolunteerPage = () => {
           <Button
             className="common-pointer cursor-pointer min-w-[198px] md:ml-[0] ml-[613px] mr-[629px] mt-[108px] rounded-[29px] text-center text-xl tracking-[-0.20px]"
             onClick={() => navigate("/formvolunteersuccess")}
+            shape="circle"
             color="light_green_800"
             size="md"
             variant="fill"

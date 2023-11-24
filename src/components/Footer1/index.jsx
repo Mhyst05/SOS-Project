@@ -3,23 +3,23 @@ import React from "react";
 import { Button, Img, Text } from "components";
 
 const Footer1 = (props) => {
-  function handleNavigate() {
+  function handleNavigate1() {
     const win = window.open("https://www.tiktok.com/foryou", "_blank");
     win.focus();
   }
-  function handleNavigate1() {
+  function handleNavigate2() {
     const win = window.open("https://twitter.com/", "_blank");
     win.focus();
   }
-  function handleNavigate2() {
+  function handleNavigate3() {
     const win = window.open("https://discord.gg/k3vqEXcW4P", "_blank");
     win.focus();
   }
-  function handleNavigate3() {
+  function handleNavigate4() {
     const win = window.open("https://youtube.com/", "_blank");
     win.focus();
   }
-  function handleNavigate4() {
+  function handleNavigate5() {
     const win = window.open("https://www.instagram.com/", "_blank");
     win.focus();
   }
@@ -29,10 +29,10 @@ const Footer1 = (props) => {
       <footer className={props.className}>
         <div className="flex flex-col items-center justify-center mb-[71px] ml-[409px] mr-[416px] mt-[74px] w-[43%]">
           <div className="flex flex-col gap-10 items-center justify-center w-full">
-            <div className="flex sm:flex-col flex-row gap-[50px] items-center justify-start w-[82%] md:w-full">
+            <div className="flex sm:flex-col flex-row gap-[50px] items-center justify-center w-[82%] md:w-full">
               <Button
                 className="common-pointer flex h-[60px] items-center justify-center w-[60px]"
-                onClick={handleNavigate4}
+                onClick={handleNavigate5}
                 shape="circle"
                 color="blue_gray_100"
                 size="xs"
@@ -46,7 +46,7 @@ const Footer1 = (props) => {
               </Button>
               <Button
                 className="common-pointer flex h-[60px] items-center justify-center w-[60px]"
-                onClick={handleNavigate3}
+                onClick={handleNavigate4}
                 shape="circle"
                 color="blue_gray_100"
                 size="xs"
@@ -60,7 +60,7 @@ const Footer1 = (props) => {
               </Button>
               <Button
                 className="common-pointer flex h-[60px] items-center justify-center w-[60px]"
-                onClick={handleNavigate2}
+                onClick={handleNavigate3}
                 shape="circle"
                 color="blue_gray_100"
                 size="xs"
@@ -74,7 +74,7 @@ const Footer1 = (props) => {
               </Button>
               <Button
                 className="common-pointer flex h-[60px] items-center justify-center w-[60px]"
-                onClick={handleNavigate1}
+                onClick={handleNavigate2}
                 shape="circle"
                 color="blue_gray_100"
                 size="xs"
@@ -88,7 +88,7 @@ const Footer1 = (props) => {
               </Button>
               <Button
                 className="common-pointer flex h-[60px] items-center justify-center w-[60px]"
-                onClick={handleNavigate}
+                onClick={handleNavigate1}
                 shape="circle"
                 color="blue_gray_100"
                 size="xs"

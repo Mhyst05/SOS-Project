@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Text } from "components";
 import Footer from "components/Footer";
-import Header from "components/Header";
+import Header1 from "components/Header1";
 import VolunteerStackrectangle596One from "components/VolunteerStackrectangle596One";
 
 import { handleSectionNavigation } from "utils";
@@ -22,15 +22,15 @@ const VolunteerPage = () => {
             alt="rectangle270"
           />
           <div className="absolute flex flex-col inset-x-[0] justify-start mx-auto top-[8%] w-[89%]">
-            <Header className="flex flex-row items-center justify-center w-full" />
+            <Header1 className="flex flex-row items-center justify-center w-full" />
             <Text
-              className="md:ml-[0] ml-[490px] mt-[125px] sm:text-[32px] md:text-[38px] text-[42px] text-orange-50"
+              className="flex justify-center mt-[125px] sm:text-[32px] md:text-[38px] text-[42px] text-orange-50"
               size="txtUbuntuBold42"
             >
               Animals Need You
             </Text>
             <Text
-              className="md:ml-[0] ml-[281px] mt-6 text-orange-50 text-xl"
+              className="flex justify-center text-orange-50 text-xl"
               size="txtUbuntuBold20"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -83,25 +83,7 @@ const VolunteerPage = () => {
               />
             </div>
           </div>
-          <div className="absolute bg-deep_orange-300 bottom-[0] md:h-[259px] h-[260px] inset-x-[0] mx-auto rounded-[20px] w-[21%]">
-            <div className="flex flex-col h-full items-center justify-start m-auto w-[87%]">
-              <div className="bg-orange-50 h-[60px] w-[60px]"></div>
-              <Text
-                className="mt-5 text-orange-50 text-xl tracking-[-0.20px]"
-                size="txtUbuntuBold20"
-              >
-                Lorem Ipsum{" "}
-              </Text>
-              <Text
-                className="leading-[20.00px] mt-4 text-[15px] text-center text-orange-50 tracking-[-0.15px] w-full"
-                size="txtUbuntuBold15"
-              >
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.{" "}
-              </Text>
-            </div>
-            <VolunteerStackrectangle596One className="absolute bg-deep_orange-300 md:h-[259px] h-[260px] inset-[0] justify-center m-auto rounded-[20px] w-full" />
-          </div>
+          <VolunteerStackrectangle596One className="absolute bg-deep_orange-300 bottom-[0] md:h-[259px] h-[260px] inset-x-[0] mx-auto rounded-[20px] w-[21%]" />
         </div>
         <Text
           className="mt-[103px] text-4xl sm:text-[32px] md:text-[34px] text-center text-deep_orange-800 tracking-[-0.36px]"

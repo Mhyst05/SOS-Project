@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { loginDeviceAuth } from "service/api";
 
 import { Button, Img, Input, Text } from "components";
-import Header from "components/Header";
+import Header1 from "components/Header1";
 
 const SignupPagePage = () => {
   const [login, setLogin] = React.useState();
@@ -29,7 +29,7 @@ const SignupPagePage = () => {
     <>
       <div className="bg-gray-900 flex flex-col font-ubuntu items-center justify-start mx-auto p-5 w-full">
         <div className="flex flex-col md:gap-10 gap-[180px] items-end justify-start max-w-7xl mb-[237px] mx-auto md:px-5 w-full">
-          <Header className="flex flex-row items-center justify-center w-full" />
+          <Header1 className="flex flex-row items-center justify-center w-full" />
           <div className="flex md:flex-col flex-row md:gap-10 gap-20 items-center justify-end w-[94%] md:w-full">
             <div className="md:h-[358px] sm:h-[464px] h-[540px] p-[26px] sm:px-5 relative w-[540px] sm:w-full">
               <div className="absolute flex flex-col h-max inset-[0] items-center justify-center m-auto w-[89%]">
@@ -37,7 +37,7 @@ const SignupPagePage = () => {
                   <div
                     className="bg-cover bg-no-repeat flex flex-col h-[319px] items-start justify-end p-[50px] md:px-10 sm:px-5 w-[98%] md:w-full"
                     style={{
-                      backgroundImage: "url('images/img_group200.svg')",
+                      backgroundImage: "url('images/img_group1887.svg')",
                     }}
                   >
                     <Img
@@ -67,72 +67,72 @@ const SignupPagePage = () => {
                                     <Img
                                       className="absolute h-[94px] inset-y-[0] left-[0] my-auto"
                                       src="images/img_signal.svg"
-                                      alt="signal"
+                                      alt="vector"
                                     />
                                     <Img
                                       className="absolute h-[89px] inset-y-[0] my-auto right-[0]"
                                       src="images/img_signal_blue_gray_700.svg"
-                                      alt="signal_One"
+                                      alt="vector_One"
                                     />
                                   </div>
                                   <Img
                                     className="h-[90px] ml-[-7.71px] my-auto z-[1]"
                                     src="images/img_checkmark.svg"
-                                    alt="checkmark"
+                                    alt="vector_Two"
                                   />
                                 </div>
                                 <Img
                                   className="absolute h-[111px] inset-y-[0] my-auto right-[0]"
                                   src="images/img_vector_blue_gray_700.svg"
-                                  alt="vector"
+                                  alt="vector_Three"
                                 />
                               </div>
                               <Img
                                 className="absolute bottom-[5%] h-[87px] left-[0]"
                                 src="images/img_favorite.svg"
-                                alt="favorite"
+                                alt="vector_Four"
                               />
                             </div>
                             <div className="absolute bottom-[4%] flex flex-row items-start justify-center right-[35%] w-[21%]">
                               <Img
                                 className="h-[49px] mt-1"
                                 src="images/img_location.svg"
-                                alt="location"
+                                alt="vector_Five"
                               />
                               <Img
                                 className="h-[89px] ml-1"
                                 src="images/img_vector.svg"
-                                alt="vector_One"
+                                alt="vector_Six"
                               />
                             </div>
                           </div>
                           <Img
                             className="absolute bottom-[0] h-[110px] right-[0]"
                             src="images/img_vector_blue_gray_900.svg"
-                            alt="vector_Two"
+                            alt="vector_Seven"
                           />
                           <Img
                             className="absolute h-[125px] inset-y-[0] left-[10%] my-auto"
                             src="images/img_vector_blue_gray_700_125x53.svg"
-                            alt="vector_Three"
+                            alt="vector_Eight"
                           />
                         </div>
                         <Img
                           className="absolute bottom-[0] h-10 left-[36%]"
                           src="images/img_location.svg"
-                          alt="location_One"
+                          alt="vector_Nine"
                         />
                       </div>
                       <Img
                         className="absolute h-[123px] inset-y-[0] left-[11%] my-auto"
                         src="images/img_vector_blue_gray_900_123x46.svg"
-                        alt="vector_Four"
+                        alt="vector_Ten"
                       />
                     </div>
                     <Img
                       className="absolute bottom-[2%] h-[53px] inset-x-[0] mx-auto"
                       src="images/img_location.svg"
-                      alt="location_Two"
+                      alt="vector_Eleven"
                     />
                   </div>
                   <div className="bg-light_green-800 flex flex-col items-center justify-start ml-auto mr-[22px] mt-[-5.48px] w-[44%] z-[1]">
@@ -166,7 +166,7 @@ const SignupPagePage = () => {
                   Email
                 </Text>
                 <Input
-                  name="group197"
+                  name="group1884"
                   placeholder="Isi email..."
                   value={login?.status}
                   className="font-bold p-0 placeholder:text-blue_gray-900_47 text-left text-xl tracking-[-0.20px] w-full"
@@ -183,7 +183,7 @@ const SignupPagePage = () => {
                   Password
                 </Text>
                 <Input
-                  name="group196"
+                  name="group1883"
                   placeholder="Isi password..."
                   value={login?.status}
                   className="font-bold p-0 placeholder:text-blue_gray-900_47 text-left text-xl tracking-[-0.20px] w-full"
@@ -200,7 +200,7 @@ const SignupPagePage = () => {
                   Confirm Password
                 </Text>
                 <Input
-                  name="group195"
+                  name="group1882"
                   placeholder="Isi password..."
                   value={login?.status}
                   className="font-bold p-0 placeholder:text-blue_gray-900_47 text-left text-xl tracking-[-0.20px] w-full"
